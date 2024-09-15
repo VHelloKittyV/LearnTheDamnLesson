@@ -6,6 +6,7 @@ function App() {
   const easy = 20;
   const normal = 100;
   const hard = 1000;
+
   const [lesson, setLesson] = useState("");
   const [lessons, setLessons] = useState([]);
   const [inputClass, setInputClass] = useState("");
@@ -17,6 +18,7 @@ function App() {
   const handleOnChange = (e) => {
     setLesson(e.target.value);
   };
+
   const handleChangeLevel = (e) => {
     setLessonCount(parseInt(e.target.value));
   };
@@ -54,6 +56,7 @@ function App() {
       setTitle("Lesson learnt?");
     }
   };
+  
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
